@@ -7,6 +7,9 @@ function SingleNoteView() {
   let params = useParams();
   const [singleNoteData, setSingelNoteData] = useState();
   const BASE_URL = "http://127.0.0.1:8000/";
+  
+  // Single note view
+
   let SingleNote = () => {
     axios.get(BASE_URL + `api/v1/notes/${params.id}/`).then((response) => {
       setSingelNoteData(response.data);

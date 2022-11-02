@@ -18,6 +18,9 @@ function AddNoteForm() {
   const [body,setBody] = useState('')
   const [fieldError,setFieldError] = useState()
   let navigate = useNavigate()
+   
+  // create a new note 
+
   let SubmitNote = (e)=>{
     e.preventDefault()
     if (title===''|| body===''){

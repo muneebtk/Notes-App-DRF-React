@@ -1,12 +1,12 @@
-import React from 'react'
-import NotFound from '../Components/404/NotFound'
+import React from "react";
+import NotFound from "../Components/404/NotFound";
 
 function NotFoundPage() {
   return (
     <div>
-        <NotFound/>
+      <NotFound />
     </div>
-  )
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;

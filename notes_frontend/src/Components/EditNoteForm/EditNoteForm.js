@@ -19,6 +19,8 @@ function EditNoteForm() {
   const BASE_URL = "http://127.0.0.1:8000/";
   let [fieldError,setFieldError] = useState()
   let navigate = useNavigate()
+  
+  // Submit an edited note 
 
   let SubmitEditedNote = (e) => {
     e.preventDefault()
@@ -40,6 +42,8 @@ function EditNoteForm() {
         setFieldError('Something goes wrong, Please try again!')
       });
   }}
+  // Fetching a single note
+
   let GetSingleNoteData = () => {
     axios.get(BASE_URL + `api/v1/notes/${params.id}/`).then((response) => {
       setTitle(response.data.title);

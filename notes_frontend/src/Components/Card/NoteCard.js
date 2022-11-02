@@ -31,6 +31,8 @@ function NoteCard(props) {
   };
   const [id, setId] = useState();
   const BASE_URL = "http://127.0.0.1:8000/";
+  // Delete a note
+
   let DeleteNote = (id) => {
     axios
       .delete(BASE_URL + `api/v1/notes/${id}/`)
@@ -46,6 +48,8 @@ function NoteCard(props) {
     handleOpen();
     setId(id);
   };
+  // After delete a modal, close modal and reload the home page
+
   let AfterDel = () => {
     handleClose();
     window.location.reload();
