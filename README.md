@@ -2,7 +2,7 @@
 <p>
 </p>
 
-- It is a Notes App
+- It is a Notes App<br/>
 -User can add, edit, delete and get Notes
 
 
