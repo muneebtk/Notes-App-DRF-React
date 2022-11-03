@@ -15,7 +15,7 @@ function HomePage() {
   // Fetching all notes
   let AllNotes = () => {
     axios
-      .get(BASE_URL + "api/v1/notes")
+      .get(BASE_URL + "api/v1/notes/")
       .then((response) => {
         setAllNotesData(response.data);
       })
